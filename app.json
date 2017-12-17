@@ -1,0 +1,13 @@
+{
+  "name": "learning Heroku Login App",
+  "description": "learning Heroku Login App",
+  "keywords": [
+    "learning",
+    "python",
+    "sample"
+  ],
+  "repository": "https://github.com/bitsfly007/learning.git",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}

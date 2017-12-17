@@ -1,0 +1,87 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Admin login Page{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+
+
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+  </div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+
+    <div class="col-sm-8">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+
+  </div>
+</div>
+</br>
+  <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:red;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:blue;">.col-sm-3</div>
+  </div>
+</center>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-3">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+
+    <div class="col-sm-3">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+    <div class="col-sm-3">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+    <div class="col-sm-3">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+  </div>
+</div>
+<BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Admin login Page{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <p>The data-placement attribute specifies the tooltip position.</p>
+  <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+</center>
+
+<BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}

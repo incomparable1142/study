@@ -1,0 +1,50 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Admin login Page{% endblock %}
+
+{% block head %}
+
+  {{ super() }}
+<style>
+    br{line-height:10em;}
+</style>
+
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+
+        <h4>ADMIN LOGIN </h4><br>
+        <form class="form" action="/login" method="post">
+        <table>
+            <tr>
+                <th> EMAIL :</th><th><input type="text" size="30" name="company_email" required=""></tr>
+            </tr>
+
+            <tr>
+                <th>PASSWORD :</th><th><input type="password" size="30" name="password" required=""></tr>
+            </tr>
+
+            <tr>
+                <th><label class="checkbox" for="rememberme"></th>
+                <th><input type="checkbox" /> Remember me</label></th>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th><input class="btn btn-success" type="submit" value="Signin">
+
+           </tr>
+        </table>
+        </form>
+        </center>
+<BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}

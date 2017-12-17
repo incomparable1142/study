@@ -1,0 +1,32 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Admin login Page{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+
+<div class="container">
+  <h2>Rounded Corners</h2>
+
+  <img src="static/1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"><br><br>
+    <h2>circle Corners</h2>
+<img src="static/1.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"><br><br>
+    <h2>thumbnail Corners</h2>
+<img src="static/1.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</div>
+
+</center>
+
+<BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}

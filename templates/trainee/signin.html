@@ -1,0 +1,300 @@
+{% extends "trainee/base.html" %}
+{% block title %}Trainee Page{% endblock %}
+
+{% block head %}
+
+  {{ super() }}
+<style>
+    br{line-height:4em;}
+</style>
+
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+
+        <h4>TRAINEE SIGNIN </h4><BR>
+
+<div class="container">
+
+
+
+    <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#PROJECTS">PROJECTS</a></li>
+    <li><a data-toggle="pill" href="#DEVELOPERS">DEVELOPERS</a></li>
+    <li><a data-toggle="pill" href="#TASKS">TASKS</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="PROJECTS" class="tab-pane fade in active">
+      <div class="container">
+
+  <table class="table table-bordered">
+    <center><thead>
+      <tr>
+        <th>PROJECT NAME</th>
+        <th>LAGUAGE</th>
+        <th>DEVELOPER NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+
+    </tbody></center>
+  </table>
+
+</div>
+    </div>
+    <div id="DEVELOPERS" class="tab-pane fade">
+          <div class="container">
+          <BR>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>manish</td>
+        <td>Doe</td>
+        <td>manish@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    </div>
+    <div id="TASKS" class="tab-pane fade">
+          <div class="container">
+          <BR>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>gaurav</td>
+        <td>Doe</td>
+        <td>gaurav@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+        <!--<form class="form" action="/login" method="post">-->
+        <!--<table>-->
+            <!--<tr>-->
+                <!--<th> EMAIL :</th><th><input type="text" size="30" name="company_email" required=""></tr>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+                <!--<th>PASSWORD :</th><th><input type="password" size="30" name="password" required=""></tr>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+                <!--<th><label class="checkbox" for="rememberme"></th>-->
+                <!--<th><input type="checkbox" /> Remember me</label></th>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th><input class="btn btn-success" type="submit" value="Signin">-->
+
+           <!--</tr>-->
+        <!--</table>-->
+        <!--</form>-->
+        </center>
+<BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}

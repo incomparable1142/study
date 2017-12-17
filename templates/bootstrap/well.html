@@ -1,0 +1,38 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Admin login Page{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+<div class="container">
+  <h2>Well</h2>
+  <div class="well">Basic Well</div>
+</div>
+
+
+<div class="container">
+  <h2>Well Size</h2>
+  <div class="well well-sm">Small Well</div>
+  <div class="well">Normal Well</div>
+  <div class="well well-lg">Large Well</div>
+</div>
+
+
+
+
+
+</center>
+
+<BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}

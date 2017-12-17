@@ -1,0 +1,42 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Admin login Page{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<p class="important">
+
+    {% if session['name'] %}
+
+    {% else %}
+ <center>
+
+<div class="container">
+  <h2>Pager</h2>
+  <p>The .pager class provides previous and next buttons (links):</p>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</div>
+
+<BR><BR>
+
+<div class="container">
+  <h2>Pager</h2>
+  <p>The .previous and .next classes align each link to the sides of the page:</p>
+  <ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+
+</center>
+
+<BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+    {% endif %}
+</p>
+{% endblock %}
